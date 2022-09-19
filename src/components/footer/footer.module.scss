@@ -1,0 +1,43 @@
+@import "../common.scss";
+.icon1{
+    max-width: 40px;
+    margin: 5px;
+    position: relative;
+    top: 10px;
+   
+}
+.icon2{
+    max-width: 35px;
+    margin: 5px;
+    position: relative;
+    top: 10px;
+}
+.link, .txt{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    font-family: 'Cormorant Garamond',serif;
+    font-size: larger;
+}
+.wrapper{
+   background-color: $text-color-light;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   box-shadow: 0em -0.3em 1em rgba(0,0,0,0.3),
+   0em 0.3em 1em rgba(0,0,0,0.3);
+}
+.wrapper2{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+   
+}
+.txt{
+    text-align: center;
+}
+.link:hover{
+    color: $accent-color-darker;
+}

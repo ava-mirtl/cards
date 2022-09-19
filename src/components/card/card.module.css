@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Yanone+Kaffeesatz:wght@200;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #959BA5;
+  width: 10vw;
+  margin: 10px;
+  height: 20vh;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: larger;
+  padding: 5px;
+}
+
+.btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #FFFFFF;
+  font-weight: bolder;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px 0;
+  background: radial-gradient(circle, #eeaeca 30%, #94bbe9 94%);
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 0 #FFFFFF;
+          box-shadow: 0 2px 0 #FFFFFF;
+}
+
+.btn:hover {
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0 2px 0 #FFFFFF;
+          box-shadow: 0 2px 0 #FFFFFF;
+  cursor: pointer;
+}
+
+.btn:active {
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 0 #FFFFFF;
+          box-shadow: 0 1px 0 #FFFFFF;
+  -webkit-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+}
+
+.trans {
+  font-size: larger;
+}
+/*# sourceMappingURL=card.module.css.map */

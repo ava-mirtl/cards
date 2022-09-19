@@ -1,0 +1,26 @@
+// font-family: 'Amatic SC', cursive;
+// font-family: 'Cormorant Garamond', serif;
+// font-family: 'Yanone Kaffeesatz', sans-serif;
+
+$base-font: 'Cormorant Garamond';
+$base-fontSize: 16px;
+$base-fontWeight: 500;
+
+$text-color-main: #242730;
+$text-color-light:#959BA5;
+$text-color-white:#FFFFFF;
+
+$background-color: radial-gradient(circle, rgba(255,219,219,1) 15%, rgba(198,255,245,1) 73%, rgba(254,255,220,1) 100%);
+$button-color: radial-gradient(circle, rgba(238,174,202,1) 30%, rgba(148,187,233,1) 94%);
+$menu-color: #3D3654;
+$accent-color: #248a7c;
+$accent-color-darker: #1c4742;
+$accent-color-bright: #30e49f;
+$secondary-color: #daabd4;
+$secondary-color-darker: #D76BAB;
+$secondary-color-bright: #EF2EA0;
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Yanone+Kaffeesatz:wght@200;500;700&display=swap');
