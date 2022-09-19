@@ -1,53 +1,33 @@
 import Card from '../card/card';
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import styles from "./slider.module.scss";
-import Error from "../error/error";
 
-
- export default function Slider() {
+ export default function Slider(props) {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [cards, setCard] = useState([]);
-
-
-    useEffect(() => {
-      fetch("http://itgirlschool.justmakeit.ru/api/words")
-      .then(res => res.json())
-        .then((result) => {
-          console.log(result);
-            setIsLoaded(true);
-              setCard([...result]);
-          }
-          ,
-          (error) => {
-            setIsLoaded(true);
-            setError(error);
-          })}
-  , []);
-
-  
 
 const handleClick = (e) => {
-    const prevCardIndex = activeIndex - 1 || cards.length - 1;
-    const nextCardIndex = activeIndex + 1 || cards.length + 1;
-    if (e.target.id==="left"){
-        setActiveIndex(prevCardIndex)
-    } if (e.target.id==="right"){
-        setActiveIndex(nextCardIndex)
+
+  if (activeIndex === props.cards.length-1){
+    const prevCardIndex = activeIndex - 1;
+    const nextCardIndex = activeIndex +1 - props.cards.length;
+    e.target.id==="left"? setActiveIndex(prevCardIndex):setActiveIndex(nextCardIndex)
+
+  }
+  else if(activeIndex === 0){ 
+    const prevCardIndex = activeIndex + props.cards.length - 1;
+    const nextCardIndex = activeIndex + 1;
+    e.target.id==="left"? setActiveIndex(prevCardIndex):setActiveIndex(nextCardIndex)
+
+  }
+    else {
+      const prevCardIndex = activeIndex - 1;
+      const nextCardIndex = activeIndex + 1;
+      e.target.id==="left"? setActiveIndex(prevCardIndex):setActiveIndex(nextCardIndex)
+    };
+
     }
-    else{
-        return
-    }
-};
-    if (error) {
-      return <><div>Ошибка: {error.message}</div>
-      <Error></Error> </>;
-    } else if (!isLoaded) {
-      return <div>Загрузка...</div>;
-    } else {console.log(activeIndex);
         return <div className={styles.container}>
           <div className={styles.main}><button id="left" onClick={handleClick}>Предыдущее
-          </button> <Card key={cards[activeIndex].id} english={cards[activeIndex].english} russian={cards[activeIndex].russian} transcription={cards[activeIndex].transcription}></Card>
+          </button> <Card key={props.cards[activeIndex].id} english={props.cards[activeIndex].english} russian={props.cards[activeIndex].russian} transcription={props.cards[activeIndex].transcription}></Card>
 <button id="right" onClick={handleClick}>Следующее
-          </button></div></div>;}}
+          </button></div></div>;}
