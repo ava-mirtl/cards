@@ -3,6 +3,7 @@ import './App.css';
 import Footer from "./components/footer/footer";
 import Slider from './components/slider/slider';
 import Error from "./components/error/error";
+import Table from "./components/table/table";
 
 
 function App() {
@@ -30,8 +31,8 @@ function App() {
             return <div>Загрузка...</div>;
           } else { return (
     <div>
-    {/* <Header></Header>
-      <List></List> */}
+    {/* <Header></Header>*/
+      <Table array={cards}></Table> }
       <Slider cards={cards}></Slider>
       <Footer></Footer>
     </div>
