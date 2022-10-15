@@ -1,0 +1,124 @@
+{
+  "words": [
+    {
+      "id": "12080",
+      "english": "olive",
+      "transcription": "[ ˈɒlɪv ]",
+      "russian": "оливковый",
+      "tags": "цвета",
+      "tags_json": "[\"u0446u0432u0435u0442u0430\"]"
+    },
+    {
+      "id": "12081",
+      "english": "sky blue",
+      "transcription": "[ skaɪ bluː ]",
+      "russian": "небесно-голубой",
+      "tags": "цвета",
+      "tags_json": "[\"u0446u0432u0435u0442u0430\"]"
+    },
+    {
+      "id": "12092",
+      "english": "backbone",
+      "transcription": "[ ˈbækbəʊn ]",
+      "russian": "позвоночник",
+      "tags": "анатомия",
+      "tags_json": "[\"u0430u043du0430u0442u043eu043cu0438u044f\"]"
+    },
+    {
+      "id": "12097",
+      "english": "red",
+      "transcription": "[red]",
+      "russian": "красный",
+      "tags": "цвета",
+      "tags_json": "[\"u0446u0432u0435u0442u0430\"]"
+    },
+    {
+      "id": "12101",
+      "english": "orange",
+      "transcription": "[ˈɒrɪndʒ]",
+      "russian": "оранжевый",
+      "tags": "цвета",
+      "tags_json": "[\"u0446u0432u0435u0442u0430\"]"
+    },
+    {
+      "id": "12104",
+      "english": "yellow",
+      "transcription": "[ˈjeləʊ]",
+      "russian": "желтый",
+      "tags": "цвета",
+      "tags_json": "[\"u0446u0432u0435u0442u0430\"]"
+    },
+    {
+      "id": "12106",
+      "english": "green",
+      "transcription": "[ɡriːn]",
+      "russian": "зеленый",
+      "tags": "цвета",
+      "tags_json": "[\"u0446u0432u0435u0442u0430\"]"
+    },
+    {
+      "id": "12118",
+      "english": "finger",
+      "transcription": "[ˈfɪŋɡə]",
+      "russian": "палец",
+      "tags": "анатомия",
+      "tags_json": "[\"u0430u043du0430u0442u043eu043cu0438u044f\"]"
+    },
+    {
+      "id": "12127",
+      "english": "readability",
+      "transcription": "[riːdəˈbɪlɪtɪ] ",
+      "russian": "читабельность",
+      "tags": "IT",
+      "tags_json": "[\"IT\"]"
+    },
+    {
+      "id": "12130",
+      "english": "argument",
+      "transcription": "[ˈɑːgjʊmənt]",
+      "russian": "аргумент",
+      "tags": "IT",
+      "tags_json": "[\"IT\"]"
+    },
+    {
+      "id": "12131",
+      "english": "restructuring",
+      "transcription": "[riːˈstrʌkʧərɪŋ]",
+      "russian": "трансформация",
+      "tags": "IT",
+      "tags_json": "[\"IT\"]"
+    },
+    {
+      "id": "12133",
+      "english": "requirement",
+      "transcription": "[rɪˈkwaɪəmənt]",
+      "russian": "требование",
+      "tags": "IT",
+      "tags_json": "[\"IT\"]"
+    },
+    {
+      "id": "12134",
+      "english": "stack",
+      "transcription": "[stæk]",
+      "russian": "стек",
+      "tags": "IT",
+      "tags_json": "[\"IT\"]"
+    },
+    {
+      "id": "12136",
+      "english": "hardware",
+      "transcription": "[ˈhɑːdwɛə]",
+      "russian": "оборудование",
+      "tags": "IT",
+      "tags_json": "[\"IT\"]"
+    },
+    {
+      "id": "12137",
+      "english": "merge",
+      "transcription": "[mɜːʤ]",
+      "russian": "слияние",
+      "tags": "IT",
+      "tags_json": "[\"IT\"]"
+    }
+  ]
+}

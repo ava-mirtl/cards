@@ -1,0 +1,70 @@
+@import "../common.scss";
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    background: $text-color-light;
+
+}
+.wrapperq{
+    display: flex;
+    justify-content: center;
+
+}
+.row{ display: -ms-grid;
+    width: 90vw;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background: $text-color-light;
+
+}
+.word, .translation, .buttons, .transcription, .tags {
+    max-width: 10vw;
+    font-family: 'Amatic SC', cursive;
+  font-size: x-large;
+  color: rgb(255, 255, 255);
+  padding-left: 5px;
+  margin-left: 5px;
+  }
+  .word, .translation, .transcription, .tags{
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+  } 
+  .btn{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: large;
+    align-self: center;
+    color: $text-color-white;
+    width: fit-content;
+    margin: 5px 5px;
+    background: $button-color;
+    border: 1px solid $text-color-white;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 $text-color-white;
+
+  }
+  .title {
+    max-width: 10vw;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: x-large;
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+.rows{display: -ms-grid;
+    width: 90vw;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background: rgb(255, 255, 255);}
+
+    .input{
+      max-width: 10vw;
+      font-family: 'Amatic SC', cursive;
+      font-size: x-large;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      padding-left: 5px;
+      margin-left: 5px;
+      background: $button-color;
+    }

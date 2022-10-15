@@ -7,5 +7,10 @@
 
 .title {
   max-width: 10vw;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: x-large;
+  padding-left: 5px;
+  margin-left: 5px;
+  text-align: center;
 }
 /*# sourceMappingURL=table.module.css.map */

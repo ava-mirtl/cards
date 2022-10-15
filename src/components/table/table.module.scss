@@ -1,9 +1,12 @@
 .wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-  .title {
-    max-width: 10vw;
-  }
+  display: flex;
+  justify-content: center;
+  background: $text-color-light;
+}
+.row{
+  display: -ms-grid;
+  display: grid;
+  width: 90vw;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
