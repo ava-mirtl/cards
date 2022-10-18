@@ -4,11 +4,14 @@
     display: flex;
     justify-content: center;
     background: $text-color-light;
+    
 
 }
 .wrapperq{
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    align-content: center ;  
+    min-height: 15vh;
 
 }
 .row{ display: -ms-grid;
@@ -42,7 +45,10 @@
     border: 1px solid $text-color-white;
     border-radius: 5px;
     box-shadow: 0 2px 0 $text-color-white;
-
+  }
+  .rows{
+    display: flex;
+    align-content: flex-end;
   }
   .title {
     max-width: 10vw;
@@ -50,6 +56,7 @@
     font-size: x-large;
     padding-left: 5px;
     margin-left: 5px;
+    margin-bottom: 5px;
   }
 .rows{display: -ms-grid;
     width: 90vw;
@@ -68,3 +75,6 @@
       margin-left: 5px;
       background: $button-color;
     }
+    .kostyl{
+      background-color: $text-color-light;
+      color: $text-color-light}

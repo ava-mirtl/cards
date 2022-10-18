@@ -1,0 +1,65 @@
+@import "../common.scss";
+
+.link, .txt{
+    text-decoration: none;
+    color: $text-color-main;
+    margin: 5px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: xx-large;
+}
+.wrapper{
+   background-color: $text-color-light;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+   box-shadow: 0em -0.3em 1em rgba(0,0,0,0.3),
+   0em 0.3em 1em rgba(0,0,0,0.3);
+   justify-content: space-between;
+   margin-bottom: 20px;
+   position: fixed;
+min-width: 100vw;
+}
+.btn{align-self: center;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    color: $text-color-white;
+    font-weight: bolder;
+    width: fit-content;
+     margin: 5px 0;
+     background: $button-color;
+     border: 1px solid $text-color-white;
+     border-radius: 5px;
+     box-shadow: 0 2px 0 $text-color-white;
+}
+.btn:hover{
+    border: 1px solid $text-color-white;
+    box-shadow: 0 2px 0 $text-color-white;
+    cursor: pointer; 
+ }
+ .btn:active{
+    cursor: pointer; 
+    box-shadow: 0 1px 0 $text-color-white;
+    transition: all 0.1s ease 0s;
+}
+.img{
+    width: 40px;
+}
+.wrapper2{
+    display: flex;
+    justify-content: space-between;
+    width: 54vw;
+    
+}
+.link a{
+    text-decoration: none;
+    margin-left: 15px;
+    position: relative;
+    top: 20px;
+    color: black;
+    font-size: smaller;
+    
+}
+.link a:hover{
+    color: $text-color-white;
+}

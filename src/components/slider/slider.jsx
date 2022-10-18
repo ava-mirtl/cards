@@ -27,7 +27,7 @@ const handleClick = (e) => {
 
     }
         return <div className={styles.container}>
-          <div className={styles.main}><button id="left" onClick={handleClick}>Предыдущее
+          <div className={styles.main}><button className={styles.btn} id="left" onClick={handleClick}>Предыдущее
           </button> <Card key={props.cards[activeIndex].id} english={props.cards[activeIndex].english} russian={props.cards[activeIndex].russian} transcription={props.cards[activeIndex].transcription}></Card>
-<button id="right" onClick={handleClick}>Следующее
+<button className={styles.btn}  id="right" onClick={handleClick}>Следующее
           </button></div></div>;}

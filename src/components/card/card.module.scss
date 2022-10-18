@@ -2,7 +2,7 @@
 
 .wrapper{
     background-color: $text-color-light;
-    width: 10vw;
+    width: 15vw;
     margin: 10px;
     height: 20vh;
     min-height: 150px;
@@ -17,6 +17,7 @@
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: larger;
     padding: 5px;
+    align-self: center;
 }
 .btn{align-self: center;
     color: $text-color-white;

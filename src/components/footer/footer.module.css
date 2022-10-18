@@ -27,6 +27,7 @@
 }
 
 .wrapper {
+  margin-top: 20px;
   background-color: #959BA5;
   padding: 10px;
   display: -webkit-box;

@@ -21,6 +21,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 15vh;
 }
 
 .row {
@@ -63,12 +66,21 @@
           box-shadow: 0 2px 0 #FFFFFF;
 }
 
+.rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
 .title {
   max-width: 10vw;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: x-large;
   padding-left: 5px;
   margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .rows {
@@ -84,10 +96,15 @@
   max-width: 10vw;
   font-family: 'Amatic SC', cursive;
   font-size: x-large;
-  font-weight: bolder;
+  font-weight: bold;
   color: white;
   padding-left: 5px;
   margin-left: 5px;
   background: radial-gradient(circle, #eeaeca 30%, #94bbe9 94%);
+}
+
+.kostyl {
+  background-color: #959BA5;
+  color: #959BA5;
 }
 /*# sourceMappingURL=row.module.css.map */

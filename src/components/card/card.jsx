@@ -1,5 +1,6 @@
 import styles from "./card.module.scss";
 import React, {useState} from "react";
+import Btn from "../btn/btn";
 
 
 function Card(props) {
