@@ -2,8 +2,15 @@
 
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
    min-height: 80vh;
+}
+.counter{
+  align-self: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: xx-large;
+    color: $text-color-main;
 }
 .main{
     display: flex;

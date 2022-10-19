@@ -4,6 +4,10 @@ import styles from "./slider.module.scss";
 
  export default function Slider(props) {
     const [activeIndex, setActiveIndex] = useState(0);
+    const [counter, setCounter] = useState(0);
+    const handleCount = () =>{
+   setCounter(counter+1);
+    }
 
 const handleClick = (e) => {
 
@@ -27,7 +31,14 @@ const handleClick = (e) => {
 
     }
         return <div className={styles.container}>
-          <div className={styles.main}><button className={styles.btn} id="left" onClick={handleClick}>Предыдущее
-          </button> <Card key={props.cards[activeIndex].id} english={props.cards[activeIndex].english} russian={props.cards[activeIndex].russian} transcription={props.cards[activeIndex].transcription}></Card>
+          <div className={styles.counter}>Вы изучили {counter} слов за тренировку
+          </div>
+          <div className={styles.main}><button className={styles.btn} 
+          id="left" onClick={handleClick}>Предыдущее
+          </button> <Card key={props.cards[activeIndex].id}
+          english={props.cards[activeIndex].english} 
+          russian={props.cards[activeIndex].russian} 
+          transcription={props.cards[activeIndex].transcription} count={handleCount}>
+          </Card>
 <button className={styles.btn}  id="right" onClick={handleClick}>Следующее
           </button></div></div>;}
