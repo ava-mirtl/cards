@@ -78,3 +78,12 @@
     .kostyl{
       background-color: $text-color-light;
       color: $text-color-light}
+
+      .invalid{
+        border: 3px solid rgb(255, 3, 3);
+      }
+.error{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: rgb(136, 16, 16);
+  font-weight: bolder;
+}

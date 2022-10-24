@@ -7,8 +7,8 @@ export default function Table(props) {
     <div className={styles.wrapperq}>
     <div className ={styles.rows} >
       <div className={styles.title}>Cлово</div>
-      <div className={styles.title}>Перевод</div>
       <div className={styles.title}>Транскрипция</div>
+      <div className={styles.title}>Перевод</div>
       <div className={styles.title}>Теги</div>
       <div className={styles.title}>Редактирование</div>
       </div>

@@ -7,7 +7,7 @@ function Card(props) {
   const ref = useRef();
      let [cardPosition, setPosition] = useState(true);
      useEffect(() => {
-      ref.current.focus()},[])
+      props.ref.current.focus()},[])
     const handleClick =()=>{
     setPosition(false);
     props.count();
