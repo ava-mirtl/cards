@@ -17,8 +17,6 @@ function Row({ word, translation, transcription, tags }) {
       translation: translation
   })}
 
-  
-
 
   function onChangeWord(event) {
     if(event.target.value === ""){

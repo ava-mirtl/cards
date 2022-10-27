@@ -1,7 +1,6 @@
-import styles from "./footer.module.scss";
 import mailIcon from "../../assets/img/stay-connected.png";
 import phoneIcon from "../../assets/img/telefone.png"
-
+import styles from "./footer.module.scss";
 
 
 function Footer() {

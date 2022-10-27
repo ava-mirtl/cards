@@ -1,5 +1,5 @@
-import styles from "./404.module.scss";
 import errorpage from "../../assets/img/5203299.jpg"
+import styles from "./404.module.scss";
 
 function Error() {
     return (

@@ -1,5 +1,5 @@
-import Card from '../card/card';
 import React, {useState} from "react";
+import Card from '../card/card';
 import styles from "./slider.module.scss";
 
  export default function Slider(props) {

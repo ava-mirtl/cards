@@ -1,17 +1,12 @@
 import React, {useState, useEffect} from "react";
-import './App.css';
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Slider from './components/slider/slider';
 import Table from "./components/table/table";
 import GetServices from "./api/GetServices";
 import Error from "./components/error/error";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import './App.css';
 
 
 function App() {

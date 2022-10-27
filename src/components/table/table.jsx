@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from "./row.module.scss";
 import Row from './row';
+import styles from "./row.module.scss";
 
 export default function Table(props) {  
           return (<>

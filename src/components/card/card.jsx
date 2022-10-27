@@ -1,13 +1,13 @@
-import styles from "./card.module.scss";
 import React, {useState, useEffect, useRef} from "react";
 import Btn from "../btn/btn";
+import styles from "./card.module.scss";
 
 
 function Card(props) {
   const ref = useRef();
      let [cardPosition, setPosition] = useState(true);
      useEffect(() => {
-      props.ref.current.focus()},[])
+     ref.current.focus()},[])
     const handleClick =()=>{
     setPosition(false);
     props.count();
