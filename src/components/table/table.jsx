@@ -14,9 +14,9 @@ export default function Table(props) {
       </div>
       </div>
       {props.array.map((item)=>(
-<Row key = {item.id} word = {item.english} translation = {item.russian} transcription={item.transcription} tags ={item.tags} />
+<Row key = {item.id} word = {item.english} translation = {item.russian} transcription={item.transcription} id={item.id} tags ={item.tags}/>
       ))}
-<div className={styles.kostyl}>пробел</div>
+<div className={styles.kostyl}>пробел</div>``
     </>
   )
 }

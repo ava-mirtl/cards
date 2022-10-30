@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./row.module.scss";
 
-function Row({ word, translation, transcription, tags }) {
+function Row({ word, translation, transcription, tags, id }) {
   const [isEditMode, changeEditMode] = useState(false);
   const [save, setSaved] = useState({ word, translation });
   const [formIsValid, setFormIsValid ]= useState(true);
@@ -20,7 +20,7 @@ function Row({ word, translation, transcription, tags }) {
 
   function onChangeWord(event) {
     if(event.target.value === ""){
-      setErrorMsg("поле не может быть пустым");
+    setErrorMsg("поле не может быть пустым");
     setFormIsValid(false);
     event.currentTarget.classList.add(styles.invalid);}
     else{
@@ -50,9 +50,12 @@ function Row({ word, translation, transcription, tags }) {
       changeEditMode(false);
       console.log(save.word, save.translation, transcription, tags);
   };
+  const onDelete = (e) => { 
+
+  }
 
   if (!isEditMode) {
-    return (        <div className ={styles.wrapper} >
+    return (        <div id={id} className ={styles.wrapper} >
         <div className ={styles.row} >
           <div className={styles.word}>{save.word}</div>
           <div className={styles.transcription}>{transcription}</div>
@@ -60,12 +63,13 @@ function Row({ word, translation, transcription, tags }) {
           <div className={styles.tags}>{tags}</div>
           <div className={styles.buttons}>
             <button onClick={onClick} className={styles.btn}>edit</button>
-            <button className={styles.btn}>delete</button>
+            <button onClick={onDelete} className={styles.btn}>delete</button>
           </div>
       </div>
       </div>
     );
   } 
+
   else {
   if(formIsValid){
     return (<div className ={styles.wrapper} >
