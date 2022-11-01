@@ -6,6 +6,9 @@ function Row({ word, translation, transcription, tags, id }) {
   const [save, setSaved] = useState({ word, translation });
   const [formIsValid, setFormIsValid ]= useState(true);
   const [errorMsg, setErrorMsg ] = useState("");
+  const [del, setDel] = useState(false);
+
+
   function onClick() {
     changeEditMode(true);
   }
@@ -51,25 +54,28 @@ function Row({ word, translation, transcription, tags, id }) {
       console.log(save.word, save.translation, transcription, tags);
   };
   const onDelete = (e) => { 
-
+let del = e.currentTarget.id;
+setDel(del);
+console.log(id);
   }
 
-  if (!isEditMode) {
+  if (!isEditMode & !del) {
     return (        <div id={id} className ={styles.wrapper} >
         <div className ={styles.row} >
           <div className={styles.word}>{save.word}</div>
           <div className={styles.transcription}>{transcription}</div>
           <div className={styles.translation}>{save.translation}</div>
           <div className={styles.tags}>{tags}</div>
-          <div className={styles.buttons}>
+          <div  className={styles.buttons}>
             <button onClick={onClick} className={styles.btn}>edit</button>
-            <button onClick={onDelete} className={styles.btn}>delete</button>
+            <button id={id} onClick={onDelete} className={styles.btn}>delete</button>
           </div>
       </div>
       </div>
     );
   } 
-
+else if(del){
+  return }
   else {
   if(formIsValid){
     return (<div className ={styles.wrapper} >
