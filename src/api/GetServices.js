@@ -6,7 +6,7 @@ class GetServices {
 
     static async getWord(){
         try{
-            const responce = await axios.get('http://localhost:3001/words');
+            const responce = await axios.get('http://itgirlschool.justmakeit.ru/api/words');
             return responce.data
         }
         catch(e){

@@ -13,12 +13,10 @@ $text-color-white:#FFFFFF;
 $background-color: radial-gradient(circle, rgba(255,219,219,1) 15%, rgba(198,255,245,1) 73%, rgba(254,255,220,1) 100%);
 $button-color: radial-gradient(circle, rgba(238,174,202,1) 30%, rgba(148,187,233,1) 94%);
 $menu-color: #3D3654;
-$accent-color: #248a7c;
 $accent-color-darker: #1c4742;
-$accent-color-bright: #30e49f;
+$accent-color-bright:  rgba(148,187,233,1);
 $secondary-color: #daabd4;
 $secondary-color-darker: #D76BAB;
-$secondary-color-bright: #EF2EA0;
 *{
     box-sizing: border-box;
 }

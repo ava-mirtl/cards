@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import dataContext from "./components/data/data";
+import Spinner from "./components/spinner/spinner";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Slider from './components/slider/slider';
@@ -11,33 +13,43 @@ import './App.css';
 
 function App() {
   
-  const [data, setData] = useState(false);
-  
+  const [data, setData] = useState([{func: postWords}]);
 
-async function getWords(){
-  const words = await GetServices.getWord()
-  setData(words)
-
-
+async function componentDidMount(){
+  const words = await GetServices.getWord();
+  setData(prevState =>[...prevState, words]);
 }
-    useEffect(() => {
-getWords()},[])
 
-          if (!data) {
-            return <div>Загрузка...</div>;
+    useEffect(() => {
+componentDidMount()},[])
+
+
+function postWords(english,transcription,russian,tags){
+setData([...data[1].push({id: Math.random(),
+  english: english,
+  transcription: transcription,
+  russian: russian,
+  tags: tags,
+  tags_json: '[new]'})]);
+  console.log(data);
+}
+
+
+          if (data.length<2) {
+            return <Spinner/>;
           } 
-          return (
+          return (<dataContext.Provider value={data}>
             <Router><div>
               <Header></Header>
                 <Routes>
                   <Route path="/about" element={<Error/>} />
                   <Route path="*" element={<Error/>} />
                   <Route path="/" element={<Table array={data}></Table> } />
-                  <Route path="/training" element={<Slider cards={data}></Slider>} />
+                  <Route path="/training" element={<Slider></Slider>} />
                 </Routes>
                 <Footer></Footer>
               </div>
-            </Router>
+            </Router></dataContext.Provider>
           );
         }
 
