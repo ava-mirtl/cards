@@ -1,11 +1,11 @@
 import React, {useState, useContext} from "react";
-import dataContext from '../data/data';
+import { DataContext } from '../data/data';
 import Spinner from '../spinner/spinner';
 import Card from '../card/card';
 import styles from "./slider.module.scss";
 
  export default function Slider() {
-  const data = useContext(dataContext);
+  const { data} = useContext(DataContext);
     const [activeIndex, setActiveIndex] = useState(0);
     const [counter, setCounter] = useState(0);
     const handleCount = () =>{

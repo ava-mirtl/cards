@@ -68,21 +68,4 @@
 .trans {
   font-size: larger;
 }
-
-.focus {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: #FFFFFF;
-  font-weight: bolder;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 5px 0;
-  background: radial-gradient(circle, #eeaeca 30%, #94bbe9 94%);
-  border: dotted 1px #EF2EA0;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 0 #EF2EA0;
-          box-shadow: 0 2px 0 #EF2EA0;
-}
 /*# sourceMappingURL=card.module.css.map */
